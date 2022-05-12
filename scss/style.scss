@@ -1,0 +1,119 @@
+//@import "../css/null.css";
+@import "_header";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+
+
+//ВЫРЕЗКИ СО СТРИМА ПО АДАПТИВУ!!!!!!!!!!
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.main{
+	flex: 1 1 auto;
+}
+[class*="__container"]{
+	max-width: 1050px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+.__container {
+	
+}
+
+//КОНЕЦ ВЫРЕЗОК СО СТРИМА ПО АДАПТИВУ!!!!!!!!!!
+
+body {
+	background-color: silver;
+	color: #fff;
+}
+.who-we-are {
+	background-color: #fff;
+	margin: -76px 0px 0px 0px;
+	background-image: url("/img/gears-mirror.svg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding-top: 98px;
+	padding: 98px 10px 0px 10px;
+	&_who-we-are {
+	}
+	&__title {
+		color: #4b4b4b;
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 2.5px;
+		font-weight: 700;
+		margin: 0px 0px 33px -7px;
+
+		&::before {
+			content: url("/img/mark.svg");
+		}
+	}
+
+	&__sub-title {
+		color: #02133c;
+		line-height: 42px;
+		font-weight: 900;
+		font-size: 36px;
+		margin: 0px 0px 31px -7px;
+		max-width: 583px;
+	}
+
+	&__text {
+		color: #4b4b4b;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		margin: 0px 0px 54px 0px;
+	}
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+//.menu__item a:focus + .menu__sub-link-body{
+//	opacity: 00;
+//}
+.menu__link:focus + .menu__sub-link-body {
+	opacity: 100;
+}
+
+.body__block {
+	position: relative;
+}
+.block {
+	color: #c40b0b;
+	display: block;
+}
+.block__two a {
+	height: 100px;
+	width: 100px;
+	background: #c40b0b;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	opacity: 0;
+}
+.block:focus + .block__two a {
+	opacity: 100;
+	top: 20px;
+}
+.block__two:focus {
+	color: #d67608;
+	opacity: 100;
+}
+.block__two a:hover {
+	color: antiquewhite;
+}
+.block:focus + .block__two:focus {
+	opacity: 0;
+	display: none;
+}
